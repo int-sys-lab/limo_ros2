@@ -23,7 +23,7 @@ def generate_launch_description():
                 launch.substitutions.LaunchConfiguration('open_rviz'))),
         launch_ros.actions.Node(
             package='tf2_ros',
-            executable='static_transform_publisher',
+            node_executable='static_transform_publisher',
             name='base_link_to_imu',
             arguments="0.0 0.0 0.0 0.0 0.0 0.0 /base_link /imu_link".split(
                 ' ')),
