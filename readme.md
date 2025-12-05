@@ -21,7 +21,7 @@ mkdir ~/agilex_ros2_ws
 cd ~/agilex_ros2_ws
 mkdir src
 cd src
-git clone --recursive https://github.com/agilexrobotics/limo_ros2.git
+git clone --recursive https://github.com/int-sys-lab/limo_ros2.git
 cd limo_ros2
 rm ydlidar_ros2/params/ydlidar.yaml
 ls -s limo_bringup/param/ydlidar.yaml ydlidar_ros2/params/ydlidar.yaml
