@@ -46,8 +46,8 @@ LimoDriver::LimoDriver(std::string node_name):rclcpp::Node(node_name),keep_runni
     this->get_parameter_or<std::string>("port_name", port_name, "ttyTHS1");//获取参数
     this->get_parameter_or<std::string>("odom_frame", odom_frame_, "odom");
     this->get_parameter_or<std::string>("base_frame", base_frame_, "base_link");
-    this->get_parameter_or<bool>("pub_odom_tf", pub_odom_tf_, "false");
-    this->get_parameter_or<bool>("use_mcnamu", use_mcnamu_, "false");
+    this->get_parameter_or<bool>("pub_odom_tf", pub_odom_tf_, false);
+    this->get_parameter_or<bool>("use_mcnamu", use_mcnamu_, false);
 
     std::cout << "Loading parameters: " << std::endl;
     std::cout << "- port name: " << port_name << std::endl;
